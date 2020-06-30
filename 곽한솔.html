@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8" />
+<title>CSS accordion</title>
+
+
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); font-family: 'Noto Sans KR', sans-serif;
+
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  body {
+    padding-top:100px ;
+    width: 100%;
+    height:100%;
+    text-align: center;
+  }
+  body {
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    display:-moz-box;
+    -moz-box-orient:vertical;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    display:-ms-box;
+    -ms-box-orient:vertical;
+    -ms-box-pack:middle;
+    -ms-box-align:middle;
+    display:box;
+    box-orient:vertical;
+    box-pack:center;
+    box-align:center;
+    font:.7em/1.5 "lucida grande", arial, sans-serif;
+    background:#f3faff;
+    /* For Firefox */ width:100%;
+  }
+  div {
+
+    width:600px;
+    background:#fff;
+    border-radius:5px;
+    -webkit-box-shadow:0 1px 3px rgba(0,0,0,.3);
+    box-shadow:0 1px 3px rgba(0,0,0,.3);
+    align-items: center;
+  }
+  p {
+    height:0;
+    padding:0 15px;
+    overflow:hidden;
+    -webkit-transition:height .4s ease-out, padding .4s ease-out;
+    -moz-transition:height .4s ease-out, padding .4s ease-out;
+    -o-transition:height .4s ease-out, padding .4s ease-out;
+    -ms-transition:height .4s ease-out, padding .4s ease-out;
+    transition:height .4s ease-out, padding .4s ease-out;
+  }
+  h1 {
+    font-size:2em;
+  }
+ #melon  {text-decoration: none;}
+
+  a {    font-family: 'Noto Sans KR', sans-serif;
+    display:block;
+    color:#333;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:0 1px 0 rgba(255,255,255,.5);
+  }
+  #name {
+    border-radius:2px 2px 0 0;
+        border-bottom:1px solid #aaa;
+  }
+  #contact {
+    border-radius:0 0 3px 3px;
+        border-bottom:1px solid #aaa;
+  }
+
+  #day1 {
+    border-radius:0 0 3px 3px;
+        border-bottom:1px solid #aaa;
+  }
+
+  #day2 {
+    border-radius:0 0 3px 3px;
+        border-bottom:1px solid #aaa;
+  }
+
+  #day3 {
+    border-radius:0 0 3px 3px;
+        border-bottom:1px solid #aaa;
+  }
+
+  #day4 {
+    border-radius:0 0 3px 3px;
+        border-bottom:1px solid #aaa;
+  }
+
+  #day5 {
+    border-radius:0 0 3px 3px;
+        border-bottom:1px solid #aaa;
+  }
+
+  #day6 {
+    border-radius:0 0 3px 3px;
+        border-bottom:1px solid #aaa;
+  }
+
+  #day7 {
+    border-radius:0 0 3px 3px;
+        border-bottom:1px solid #aaa;
+  }
+
+
+  a:hover, a:focus {
+    opacity:.9;
+  }
+  :target + p {
+    padding:10px 15px;
+    border-bottom:1px solid #ccc;
+  }
+  #name:target + p {
+    height:190px;
+  }
+  #day1:target + p {
+    height:180px;
+  }
+
+  #day2:target + p {
+    height:180px;
+  }
+
+  #day3:target + p {
+    height:180px;
+  }
+
+  #day4:target + p {
+    height:180px;
+  }
+
+  #day5:target + p {
+    height:180px;
+  }
+
+  #day6:target + p {
+    height:180px;
+  }
+
+  #day7:target + p {
+    height:50px;
+  }
+
+
+  #end:target {
+    border-radius:0;
+  }
+  #end:target + p {
+    height:190px;
+  }
+
+  .image {padding-right :20px;}
+
+  #text {   text-align: center;}
+
+</style>
+<div>
+  <section>
+    <a href="#name" id="name">
+      <h1>곽한솔은 일주일 동안 프로필을</h1>
+    </a>
+  </section>
+
+  <section>
+    <a href="#day1" id="day1">
+      <h1>6/3</h1>
+    </a>
+    <p>
+      <img src="곽한솔-day1.png"  alt="Cinque Terre" width="-100" height="100"align="middle"><br><br>
+      <a id="text"> 찰가머뤼 <br><br>
+      <marquee id="melon"  behavior="scroll" width="150" direction="left"><a style="color:#02e632;" target="_blank" a href="https://www.youtube.com/watch?v=iDjQSdN_ig8" >오마이걸- 살짝 설렜어</a></marquee>
+    </p>
+  </section>
+
+<!--  <section>
+    <a href="#day2" id="day2">
+      <h1>6/4</h1>
+    </a>
+    <p>
+      <img src="❤️-day2.png"  alt="Cinque Terre" width="-100" height="100"align="middle"><br><br>
+      <a id="text"> 🙏 <br><br>
+      <marquee id="melon"  behavior="scroll" width="150" direction="left"><a style="color:#02e632;" target="_blank" a href="https://youtu.be/Wpd4OJpQUWk" >그리움을 사랑한 가시나무 - 테이</a></marquee>
+    </p>
+  </section>
+
+  <section>
+    <a href="#day3" id="day3">
+      <h1>6/5</h1>
+    </a>
+    <p>
+      <img src="강민주-day1.png"  alt="Cinque Terre" width="-100" height="100"align="middle"><br><br>
+      <a id="text"> 전화번호 01095388824 <br><br>
+      <marquee id="melon"  behavior="scroll" width="150" direction="left"><a style="color:#02e632;" target="_blank" a href="https://www.youtube.com/watch?v=PgKHUJzfx4w" >공중일기 - 이나래</a></marquee>
+    </p>
+  </section>
+
+ <section>
+    <a href="#day4" id="day4">
+      <h1>6/6</h1>
+    </a>
+    <p>
+      <img src="❤️-day4.png"  alt="Cinque Terre" width="-100" height="100"align="middle"><br><br>
+      <a id="text"> 🙏 <br><br>
+      <marquee id="melon"  behavior="scroll" width="150" direction="left"><a style="color:#02e632;" target="_blank" a href="https://youtu.be/Wpd4OJpQUWk" >그리움을 사랑한 가시나무 - 테이</a></marquee>
+    </p>
+  </section>-->
+
+ <section>
+    <a href="#day5" id="day5">
+      <h1>6/7</h1>
+    </a>
+    <p>
+      <img src="곽한솔-day4.png"  alt="Cinque Terre" width="-100" height="100"align="middle"><br><br>
+      <a id="text"> 찰가머뤼 <br><br>
+      <marquee id="melon"  behavior="scroll" width="150" direction="left"><a style="color:#02e632;" target="_blank" a href="https://www.youtube.com/watch?v=5-SBT9AnVdk" >먼데이키즈-Another Day</a></marquee>
+    </p>
+  </section>
+
+<!--  <section>
+    <a href="#day6" id="day6">
+      <h1>6/8</h1>
+    </a>
+    <p>
+      <img src="--day5.png"  alt="Cinque Terre" width="-100" height="100"align="middle"><br><br>
+      <a id="text"> 오몰입 과다쿠 <br><br>
+      <marquee id="melon"  behavior="scroll" width="150" direction="left"><a style="color:#02e632;" target="_blank" a href="https://www.youtube.com/watch?v=2UmDrsMlXXg" >24시간이 모자라 - 선미</a></marquee>
+    </p>
+  </section>
+
+  <section>
+    <a href="#day7" id="day7">
+      <h1>6/9</h1>
+    </a>
+    <p>
+ <img src="❤️-day7.png"  alt="Cinque Terre" width="-100" height="100"align="middle"><br><br>
+      <a id="text"> 🙏 <br><br>
+      <marquee id="melon"  behavior="scroll" width="150" direction="left"><a style="color:#02e632;" target="_blank" a href="https://youtu.be/Wpd4OJpQUWk" >그리움을 사랑한 가시나무 - 테이</a></marquee>
+    </p>
+  </section>-->
+
+  <section>
+    <a href="#end" id="end">
+      <h1>번 바꾸었다.</h1>
+    </a>
+  </section>
+
+</div>
+
+<body>
+  <h2> <a href="kakao.html">돌아가기</h2>
+</body>
